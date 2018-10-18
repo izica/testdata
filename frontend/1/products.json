@@ -1,0 +1,23 @@
+{
+  "type": "products",
+  "items": [
+    {
+      "id": 12343,
+      "name": "Sneaker 1",
+      "description": "Nice shoes and great price",
+      "picture": "http://github.com/izica/testdata/frontend/1/img/img1.jpg"
+    },
+    {
+      "id": 12343,
+      "name": "Sneaker 1",
+      "description": "Nice shoes and great price",
+      "picture": "http://github.com/izica/testdata/frontend/1/img/img1.jpg"
+    },
+    {
+      "id": 12343,
+      "name": "Sneaker 1",
+      "description": "Nice shoes and great price",
+      "picture": "http://github.com/izica/testdata/frontend/1/img/img1.jpg"
+    }
+  ]
+}
