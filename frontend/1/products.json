@@ -3,19 +3,22 @@
   "items": [
     {
       "id": 12343,
+      "price": 820,
       "name": "Sneaker 1",
       "description": "Nice shoes and great price",
       "picture": "http://github.com/izica/testdata/frontend/1/img/img1.jpg"
     },
     {
-      "id": 12343,
-      "name": "Sneaker 1",
+      "id": 12344,
+      "price": 1060,
+      "name": "Sneaker 2",
       "description": "Nice shoes and great price",
       "picture": "http://github.com/izica/testdata/frontend/1/img/img1.jpg"
     },
     {
-      "id": 12343,
-      "name": "Sneaker 1",
+      "id": 12345,
+      "price": 650,
+      "name": "Sneaker 3",
       "description": "Nice shoes and great price",
       "picture": "http://github.com/izica/testdata/frontend/1/img/img1.jpg"
     }
