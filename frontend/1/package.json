@@ -1,0 +1,29 @@
+{
+    "name": "example",
+    "version": "1.0.0",
+    "main": "gulpfile.babel.js",
+    "scripts": {
+        "start": "gulp",
+        "build": "gulp build",
+        "css": "gulp css",
+        "js": "gulp js"
+    },
+    "repository": "",
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "@babel/core": "^7.1.0",
+        "@babel/preset-env": "^7.1.0",
+        "@babel/register": "^7.0.0",
+        "gulp": "latest",
+        "gulp-autoprefixer": "latest",
+        "gulp-babel": "latest",
+        "gulp-concat": "latest",
+        "gulp-connect": "latest",
+        "gulp-csso": "latest",
+        "gulp-plumber": "latest",
+        "gulp-sass": "latest",
+        "gulp-uglify": "latest",
+        "gulp-watch": "latest"
+    }
+}
