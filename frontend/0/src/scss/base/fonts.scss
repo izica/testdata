@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(../fonts/ProximaNova/ProximaNovaRegular.otf) format('opentype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(../fonts/ProximaNova/ProximaNovaBold.otf) format('opentype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  src: url(../fonts/FiraSans/FiraSansRegular.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url(../fonts/PlayfairDisplay/PlayfairDisplayRegular.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url(../fonts/PlayfairDisplay/PlayfairDisplayBold.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url(../fonts/icomoon/icomoon.eot);
+  src: url(../fonts/icomoon/icomoon.eot?#iefix)format('embedded-opentype'),
+  url(../fonts/icomoon/icomoon.woff) format('woff'),
+  url(../fonts/icomoon/icomoon.ttf) format('truetype');
+  font-style: normal;
+}
