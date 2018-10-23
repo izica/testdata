@@ -7,7 +7,7 @@
       "currency": "USD",
       "name": "Air Jordan 1 Retro High OG",
       "description": "Nice shoes and great price 1",
-      "picture": "http://github.com/izica/testdata/frontend/1/img/img1.jpg"
+      "picture": "https://raw.githubusercontent.com/izica/testdata/master/frontend/1/img/sneaker1.png"
     },
     {
       "id": 12344,
@@ -15,7 +15,7 @@
       "currency": "USD",
       "name": "Air Jordan 2 Retro High OG",
       "description": "Nice shoes and great price 2",
-      "picture": "http://github.com/izica/testdata/frontend/1/img/img1.jpg"
+      "picture": "https://raw.githubusercontent.com/izica/testdata/master/frontend/1/img/sneaker2.png"
     },
     {
       "id": 12345,
@@ -23,7 +23,7 @@
       "currency": "USD",
       "name": "Air Jordan 1 Retro High OG",
       "description": "Air Jordan 1 Retro High OG 3",
-      "picture": "http://github.com/izica/testdata/frontend/1/img/img1.jpg"
+      "picture": "https://raw.githubusercontent.com/izica/testdata/master/frontend/1/img/sneaker3.png"
     }
   ]
 }
