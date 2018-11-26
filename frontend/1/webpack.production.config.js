@@ -3,23 +3,23 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-    entry: [
+    entry:   [
         './src/js/app.js',
         './src/scss/app.scss'
     ],
-    output: {
+    output:  {
         filename: './assets/js/bundle.js'
     },
     resolve: {
         extensions: [".jsx", ".js", ".json", "*"],
     },
-    module: {
+    module:  {
         rules: [
             {
                 exclude: /node_modules/,
-                test: /\.js|jsx$/,
-                loader: 'babel-loader',
-                query: {
+                test:    /\.js|jsx$/,
+                loader:  'babel-loader',
+                query:   {
                     presets: [
                         ["es2015", {"modules": false}],
                         'stage-1'
@@ -31,9 +31,9 @@ module.exports = {
                 }
             }, {
                 test: /\.scss|sass$/,
-                use: ExtractTextPlugin.extract({
+                use:  ExtractTextPlugin.extract({
                     fallback: 'style-loader',
-                    use: [
+                    use:      [
                         'css-raw-loader',
                         'postcss-loader',
                         'sass-loader'
@@ -51,21 +51,21 @@ module.exports = {
         new webpack.optimize.UglifyJsPlugin({
             beautify: false,
             comments: false,
-            mangle: {
+            mangle:   {
                 except: ['$super', '$', 'exports', 'require']
             }
         }),
         new webpack.LoaderOptionsPlugin({
-            test: /\.scss|sass$/,
+            test:     /\.scss|sass$/,
             minimize: true,
             comments: false,
-            options: {
+            options:  {
                 postcss: [require('precss'), require('autoprefixer')]
             }
         }),
 
         new ExtractTextPlugin({
-            filename: './assets/css/styles.css',
+            filename:  './assets/css/styles.css',
             allChunks: true
         })
     ],
