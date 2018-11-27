@@ -1,24 +1,23 @@
 const path = require('path');
 const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-    entry:     [
+    entry: [
         'webpack-dev-server/client?http://localhost:8080',
         'webpack/hot/only-dev-server',
         './src/js/app.js',
         './src/scss/app.scss',
     ],
-    output:    {
+    output: {
         filename: './assets/js/bundle.js'
     },
-    module:    {
+    module: {
         rules: [
             {
                 exclude: /node_modules/,
-                test:    /\.js|jsx$/,
-                loader:  'babel-loader',
-                query:   {
+                test: /\.js|jsx$/,
+                loader: 'babel-loader',
+                query: {
                     presets: [
                         ["es2015", {"modules": false}],
                         'stage-1'
@@ -29,21 +28,20 @@ module.exports = {
                     ]
                 }
             }, {
-                test: /\.scss|sass$/,
-                use:  ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use:      [
-                        'css-raw-loader',
-                        'postcss-loader',
-                        'sass-loader'
-                    ]
-                })
+                test: /\.scss$/,
+                use: [
+                    'style-loader',
+                    'css-raw-loader',
+                    'postcss-loader',
+                    'sass-loader',
+                ]
             }
         ]
     },
-    plugins:   [
+    plugins: [
+        new webpack.HotModuleReplacementPlugin(),
         new webpack.LoaderOptionsPlugin({
-            test:    /\.scss|sass$/,
+            test: /\.scss|sass$/,
             options: {
                 postcss: [
                     require('precss'),
@@ -51,19 +49,15 @@ module.exports = {
                 ],
                 context: './',
             }
-        }),
-        new ExtractTextPlugin({
-            filename:  './assets/css/styles.css',
-            allChunks: true
         })
     ],
-    resolve:   {
+    resolve: {
         extensions: [".jsx", ".js", ".json", "*"],
     },
-    devtool:   "inline-source-map",
+    devtool: "inline-source-map",
     devServer: {
-        hot:                true,
+        hot: true,
         historyApiFallback: true,
-        inline:             true,
+        inline: true,
     }
 };
